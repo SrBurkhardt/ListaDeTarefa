@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Black+Ops+One&display=swap');
+
+:root {
+    --font-primary: "Black Ops One";
+    --font-secudaria: "Bevan"
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+}
+
+.calc {
+    display: flex;
+    width: 300px;
+    height: 400px;
+    margin-top: 50px;
+    justify-content: center;
+    background-color: turquoise;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.384);
+    position: relative;
+}
+
+.result-container {
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.result {
+    font-size: 2rem;
+    font-family: var(--font-primary);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.container {
+    position: absolute;
+    top: 100px;
+    width: 250px;
+    height: 275px;
+    border: 2px solid #000;
+}
+
+.line-1 {
+    position: absolute;
+    background-color: rgb(252, 247, 247);
+    font-family: var(--font-secudaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 5px;
+    left: 10px;
+}
+
+.line-2 {
+    position: absolute;
+    background-color: rgb(252, 247, 247);
+    font-family: var(--font-secudaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 5px;
+    left: 55px;
+}
+
+.line-3 {
+    position: absolute;
+    background-color: rgb(252, 247, 247);
+    font-family: var(--font-secudaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 5px;
+    left: 100px;
+}
+
+.line-4 {
+    position: absolute;
+    background-color: rgb(252, 247, 247);
+    font-family: var(--font-secudaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 5px;
+    left: 145px;
+}
+.tecla-1 {
+    position: absolute;
+    font-family: var(--font-secudaria);
+    width: 55px;
+    height: 55px;
+    background-color: rgb(252, 247, 247);
+    border-radius: 10px;
+    top: 30px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.tecla-1:hover {
+    background: rgba(251, 251, 251, 0.7);
+}
+
+.tecla-2 {
+    position: absolute;
+    font-family: var(--font-secudaria);
+    width: 55px;
+    height: 55px;
+    background-color: rgb(252, 247, 247);
+    border-radius: 10px;
+    top: 30px;
+    left: 71.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.tecla-2:hover {
+    background: rgba(251, 251, 251, 0.7);
+}
+
+.tecla-3 {
+    position: absolute;
+    font-family: var(--font-secudaria);
+    width: 55px;
+    height: 55px;
+    background-color: rgb(252, 247, 247);
+    border-radius: 10px;
+    top: 30px;
+    left: 133px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.tecla-3:hover {
+    background: rgba(251, 251, 251, 0.7);
+}
+
+.tecla-4 {
+    position: absolute;
+    font-family: var(--font-secudaria);
+    width: 55px;
+    height: 55px;
+    background-color: rgb(252, 247, 247);
+    border-radius: 10px;
+    top: 95px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.tecla-4:hover {
+    background: rgba(251, 251, 251, 0.7);
+}
+
+.tecla-5 {
+    position: absolute;
+    font-family: var(--font-secudaria);
+    width: 55px;
+    height: 55px;
+    background-color: rgb(252, 247, 247);
+    border-radius: 10px;
+    top: 95px;
+    left: 71.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.tecla-5:hover {
+    background: rgba(251, 251, 251, 0.7);
+}
+
+.tecla-6 {
+    position: absolute;
+    font-family: var(--font-secudaria);
+    width: 55px;
+    height: 55px;
+    background-color: rgb(252, 247, 247);
+    border-radius: 10px;
+    top: 95px;
+    left: 133px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.tecla-6:hover {
+    background: rgba(251, 251, 251, 0.7);
+}
+
+.tecla-7 {
+    position: absolute;
+    font-family: var(--font-secudaria);
+    width: 55px;
+    height: 55px;
+    background-color: rgb(252, 247, 247);
+    border-radius: 10px;
+    top: 160px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.tecla-7:hover {
+    background: rgba(251, 251, 251, 0.7);
+}
+
+.tecla-8 {
+    position: absolute;
+    font-family: var(--font-secudaria);
+    width: 55px;
+    height: 55px;
+    background-color: rgb(252, 247, 247);
+    border-radius: 10px;
+    top: 160px;
+    left: 71.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.tecla-8:hover {
+    background: rgba(251, 251, 251, 0.7);
+}
+
+.tecla-9 {
+    position: absolute;
+    font-family: var(--font-secudaria);
+    width: 55px;
+    height: 55px;
+    background-color: rgb(252, 247, 247);
+    border-radius: 10px;
+    top: 160px;
+    left: 133px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.tecla-9:hover {
+    background: rgba(251, 251, 251, 0.7);
+}
+
+.tecla-0 {
+    position: absolute;
+    font-family: var(--font-secudaria);
+    font-size: 1.5rem;
+    width: 116.5px;
+    height: 40px;
+    background-color: rgb(252, 247, 247);
+    border-radius: 10px;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.tecla-0:hover {
+    background: rgba(251, 251, 251, 0.7);
+}
+
+.soma {
+    position: absolute;
+    font-family: var(--font-secudaria);
+    width: 45px;
+    height: 55px;
+    background-color: rgb(252, 247, 247);
+    border-radius: 10px;
+    bottom: 12px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.soma:hover {
+    background: rgba(251, 251, 251, 0.7);
+}
+
+.sub {
+    position: absolute;
+    font-family: var(--font-secudaria);
+    width: 45px;
+    height: 55px;
+    background-color: rgb(252, 247, 247);
+    border-radius: 10px;
+    top: 143px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.sub:hover {
+    background: rgba(251, 251, 251, 0.7);
+}
+
+.mult {
+    position: absolute;
+    font-family: var(--font-secudaria);
+    width: 45px;
+    height: 55px;
+    background-color: rgb(252, 247, 247);
+    border-radius: 10px;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.mult:hover {
+    background: rgba(251, 251, 251, 0.7);
+}
+
+.div {
+    position: absolute;
+    font-family: var(--font-secudaria);
+    width: 45px;
+    height: 55px;
+    background-color: rgb(252, 247, 247);
+    border-radius: 10px;
+    top: 79px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.div:hover {
+    background: rgba(251, 251, 251, 0.7);
+}
+
+.igual {
+    position: absolute;
+    font-family: var(--font-secudaria);
+    width: 55px;
+    height: 40px;
+    background-color: rgb(252, 247, 247);
+    border-radius: 10px;
+    bottom: 10px;
+    left: 133px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.igual:hover {
+    background: rgba(251, 251, 251, 0.7);
+}
